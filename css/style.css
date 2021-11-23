@@ -1,0 +1,23 @@
+.box{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-bg-blue {
+    background-color: #1389b2;
+}
+
+.my-bg-green {
+    background-color: #0bd6a1;
+}
+
+.my-bg-yellow {
+    background-color: #ffd166;
+}
+
+.my-bg-red {
+    background-color: #f0466f;
+}
