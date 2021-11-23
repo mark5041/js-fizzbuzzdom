@@ -1,9 +1,17 @@
+h1 {
+    font-size: 4em;
+}
+
 .box{
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    background-color: #083b4c;
 }
 
 .my-bg-blue {

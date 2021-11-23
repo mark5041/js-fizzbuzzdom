@@ -1,6 +1,6 @@
 let container = document.querySelector(".container");
 let row = document.createElement("div");
-row.classList.add("row");
+row.classList.add("row", "justify-content-center");
 let element;
 let col;
 let insidetext
@@ -8,7 +8,7 @@ let insidetext
 for(let i = 1; i <= 100; i++)
 {
     col = document.createElement("div");
-    col.classList.add("box","mx-1","my-1");
+    col.classList.add("box","mx-2","my-2");
 
     switch(true)
     {
