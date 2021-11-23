@@ -4,8 +4,10 @@ row.classList.add("row", "justify-content-center");
 let element;
 let col;
 let insidetext
+let max = 10;
+let i;
 
-for(let i = 1; i <= 100; i++)
+for(i = 1; i <= 100; i++)
 {
     col = document.createElement("div");
     col.classList.add("box","mx-2","my-2");
@@ -29,9 +31,29 @@ for(let i = 1; i <= 100; i++)
             col.classList.add("my-bg-blue");
     }
 
+    if(i > max) 
+    {
+        col.classList.add("none");
+    }
+
     insidetext = `<span> ${element} </span>`;
     col.innerHTML = insidetext;
     row.append(col);
 }
 
 container.append(row);
+
+
+let see_more = document.querySelector(".my-btn");
+see_more.addEventListener('click', 
+    function()
+    {
+        let box;
+        for(i = max; i <= max + 10; i++)
+        {
+            box = document.querySelector(`.box:nth-child(${i})`)
+            box.classList.remove("none")
+        }
+        max += 10;
+    }
+);
