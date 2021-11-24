@@ -74,7 +74,7 @@ see_less.addEventListener('click',
                 box.classList.add("none");
             }
             max -= 10;
-            if(max == 20)
+            if(max <= 20)
             {
                 see_less.classList.add("none");
             }
