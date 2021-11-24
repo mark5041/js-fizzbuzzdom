@@ -70,11 +70,11 @@ see_less.addEventListener('click',
             let box;
             for(i = max; i > max - 10; i--)
             {
-                box = document.querySelector(`.box:nth-child(${i})`)
-                box.classList.add("none")
+                box = document.querySelector(`.box:nth-child(${i})`);
+                box.classList.add("none");
             }
             max -= 10;
-            if(max <= 20)
+            if(max == 20)
             {
                 see_less.classList.add("none");
             }
